@@ -1,0 +1,28 @@
+html {
+    font-size: 16px;     
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #9AD1ED;
+    margin:0;
+}
+        
+.menu{
+    background-color: #EDA135;
+    text-align: center;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a{
+    color: white;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    background-color: #4C9ED9;
+}
