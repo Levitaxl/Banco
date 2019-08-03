@@ -3,9 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Vista/ModificarInformacionUsuarioVista.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Public/CreacionUsuario.css</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Public/Header.css</file>
+            <file>file:/C:/xampp/htdocs/PhpProject1/Config/Config.php</file>
+            <file>file:/C:/xampp/htdocs/PhpProject1/Controlador/TransaccionControlador.php</file>
+            <file>file:/C:/xampp/htdocs/PhpProject1/Config/DB.php</file>
         </group>
     </open-files>
 </project-private>

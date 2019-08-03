@@ -24,11 +24,7 @@
 				<option>Venezuela</option>
 			</select>
 
-
-            <div class="btn__form">
             	<input type="submit" name="submit" value="Submit" class="btn__submit">
-            	<input type="submit" class="btn__reset" type="cancelar" value="Cancelar" name="cancelar">	
-            </div>
 		</form>
             <?php include('../Controlador/CreacionCuentaBancariaControlador.php');?>
 	</div>

@@ -64,7 +64,6 @@
              $saldo=$cuentaBancaria->saldo;
              $consulta="INSERT INTO cuentas(cedulaAsociada,numeroCuentaBancaria,saldo,tipoBanco) VALUES('$cedulaAsociada','$numeroCuentaBancaria','$saldo','$tipoBanco')";
              if(mysqli_query($conn,$consulta)){
-				echo "<p class='error'>Registro exitoso</p>";
 		}
         }
      

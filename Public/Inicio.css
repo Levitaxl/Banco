@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgba(215,215,215,1);
+        font-weight: normal;
+	font-family: sans-serif;
+}
+
+.container {
+	background: white;
+	width: 90%;
+	max-width: 550px;
+	margin:auto;/*Para centrarlo*/
+	padding: 5px 35px;
+	margin-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 3px;
+}
+
+.container .form__top {
+	color:white;
+	padding: 14px 0;
+	text-align: center;
+	color:#3a5199;
+        width: 100%;
+
+}

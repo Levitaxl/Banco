@@ -9,7 +9,7 @@
              $permiso=1;
              
              if(!is_numeric($cuentaBancaria->getNumeroCuentaBancaria())){
-		echo "<p class='error'>*Ingrese un numero de cuenta valido(maximo 10numeros)</p>";
+		echo "<p class='error'>*Ingrese un numero de cuenta valido(maximo 10numeros) Ejemplo: 1111111111</p>";
 		$permiso=0;
             }
             if($cuentaBancaria->getNumeroCuentaBancaria()>9999999999){
@@ -45,7 +45,7 @@
            $cuentaBancariaControlador=new CreacionCuentaBancariaControlador();
            if($cuentaBancariaControlador->validarDatosCuentaBancaria($cuentaBancaria)){
                $cuentaBancaria->registrarCuentaBancaria($cuentaBancaria);
-               echo "<p class='error'>Registro de cuenta exitoso</p>";
+               echo "<p class='exito'>Registro de cuenta exitoso</p>";
            }
      }
      if (isset($_POST['cancelar'])) {

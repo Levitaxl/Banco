@@ -18,6 +18,11 @@
 		echo "<p class='error'>*Ingrese monto valido</p>";
 		$permiso=0;
             }
+            
+            else if($transaccion->getMonto()<0){
+                echo "<p class='error'>*El monto de la transaccion debe de ser mayor a 0</p>";
+		$permiso=0;
+            }
             if (strcmp ($transaccion->getTipoBancoEmisor(), "Seleccione su tipo de banco") == 0) {
 		echo "<p class='error'>*Seleccione el tipo de banco del emisor</p>";
 		$permiso=0;
@@ -30,15 +35,17 @@
                 echo "<p class='error'>*La cuenta del emisor no se encuentra en el sistema</p>";
 		 $permiso=0;
             }
+            
+            else  if($transaccion->getMonto()>$transaccion->buscarSaldoDeLaCuenta($transaccion->getNroCuentaEmisor(),$transaccion->getTipoBancoEmisor())){
+                   echo "<p class='error'>*La cuenta del emisor no posee suficiente saldo para realizar la transaccion</p>";
+                    $permiso=0;
+                }
+            
             if($transaccion->consultarExistenciaCuenta($transaccion->getNroCuentaReceptor(),$transaccion->getTipoBancoReceptor())){
                 echo "<p class='error'>*La cuenta del receptor no se encuentra en el sistema</p>";
 		$permiso=0;
             }
-            
-            if($transaccion->getMonto()>$transaccion->buscarSaldoDeLaCuenta($transaccion->getNroCuentaEmisor(),$transaccion->getTipoBancoEmisor())){
-                echo "<p class='error'>*La cuenta del emisor no posee suficiente saldo para realizar la transaccion</p>";
-		$permiso=0;
-            }
+           
             
             return $permiso;
     }
@@ -58,7 +65,7 @@
              $tipoBancoReceptor=$transaccion->getTipoBancoReceptor();
              $transaccion->setCedulaReceptor($transaccion->buscarCedulaDeLaCuenta($nroCuentaReceptor,$tipoBancoReceptor));
              $transaccion->realizarTransferencia($transaccion);
-             echo "<p class='error'>*Transsacion exitosa</p>";
+             echo "<p class='exito'>*Transsacion exitosa</p>";
              
          }
          

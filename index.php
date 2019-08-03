@@ -8,7 +8,9 @@
 <body>
 	<div class="menu">
 		<ul>
-			<li><a href="http://localhost/PhpProject1/Vista/CreacionUsuarioVista.php">Crear cuenta</a></li>
+			<!--<li><a href="https://banco-program-2.herokuapp.com/Vista/CreacionUsuarioVista.php">Crear cuenta</a></li>
+                        <li><a href="https://banco-program-2.herokuapp.com/Vista/InicioSesionVista.php">Iniciar Sesion</a></li>-->
+                        <li><a href="http://localhost/PhpProject1/Vista/CreacionUsuarioVista.php">Crear cuenta</a></li>
                         <li><a href="http://localhost/PhpProject1/Vista/InicioSesionVista.php">Iniciar Sesion</a></li>
 			
 		</ul>

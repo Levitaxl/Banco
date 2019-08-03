@@ -24,10 +24,8 @@
             <input class="input" type="text" name= "telefono"value='<?php echo $mostrarInformacionUsuario['telefono'];?>' >
             <input class="input" type="text" name="ciudad" value='<?php echo $mostrarInformacionUsuario['ciudad'];?>'>
                 
-            <div class="btn__form">
                 <input type="submit" class="btn__submit" name="submit" value="Submit">
-                <input type="submit" class="btn__reset" type="cancelar" value="Cancelar" name="cancelar">
-            </div>
+               
         </form>
         
         <?php
@@ -35,8 +33,7 @@
           if (isset($_POST['submit'])) {
             if($informacionUsuario->validarDatos($_POST['nombre'],$_POST['apellido'],$_POST['telefono'],$_POST['ciudad'])){
                 $informacionUsuario->actualizarInformacionUsuario($_POST['nombre'],$_POST['apellido'], $_POST['telefono'], $_POST['ciudad']);
-                header("Location: http://localhost/PhpProject1/Vista/InicioVista.php");
-                echo 'TODO FINO PAPAH';
+                echo "<p class='exito'>Datos modificados exitosamente</p>";
             }            
                         
             }

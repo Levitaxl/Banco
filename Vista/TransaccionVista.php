@@ -35,12 +35,7 @@
 			</select>
 
 			<input class="input" type="text" name="monto" placeholder="Ingrese el monto">
-
-
-            <div class="btn__form">
             	<input type="submit" name="submit" value="Submit" class="btn__submit">
-            	<input type="submit" class="btn__reset" type="cancelar" value="Cancelar" name="cancelar">	
-            </div>
             
                 </form>
             <?php include('../Controlador/TransaccionControlador.php');?>

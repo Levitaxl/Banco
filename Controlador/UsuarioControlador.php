@@ -54,7 +54,7 @@
             
             if($usuarioControlador->validarDatos($usuario)){  
                  $usuarioControlador->registrar($usuario); 
-                 echo "<p class='error'>Registro exitoso</p>";       
+                 echo "<p class='exito'>Registro exitoso</p>";       
             }
        
 }

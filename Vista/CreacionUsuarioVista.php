@@ -8,21 +8,19 @@
     <div class="container">
          
         <div class="form__top">
-            <h2><span>Registro De Usuario</span></h2>
+            <h1>Registro De Usuario</h1>
         </div>
         
         <form class="form__reg" action="<?php $_SERVER['PHP_SELF']; ?>"  method="post">
-            <input class="input" type="text" name="nombre" placeholder="Nombre" autofocus>
-            <input class="input" type="text" name="apellido"placeholder="Apellido">
-            <input class="input" type="text" name="cedula"placeholder="Cedula">
-            <input class="input" type="text" name= "telefono"placeholder="Telefono">
-            <input class="input" type="text" name="ciudad" placeholder="Ciudad">
-            <input class="input" type="text" name="contrasena" placeholder="Contraseña">
+            <input class="input" type="text" name="nombre"     placeholder="Nombre" autofocus>
+            <input class="input" type="text" name="apellido"   placeholder="Apellido">
+            <input class="input" type="text" name="cedula"     placeholder="Cedula">
+            <input class="input" type="text" name= "telefono"  placeholder="Telefono">
+            <input class="input" type="text" name= "ciudad"  placeholder="Ciudad">
+            <input class="input" type="password" name="contrasena" placeholder="Contrasena">
+
                 
-            <div class="btn__form">
-                <input type="submit" class="btn__submit" name="submit" value="Submit">
-                <input type="submit" class="btn__reset"  name="regresar" value="regresar">
-            </div>
+            <input type="submit" class="btn__submit" name="submit" value="Submit">
         </form>
         <?php include('../Controlador/UsuarioControlador.php');?>
     </div>
