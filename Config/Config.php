@@ -15,3 +15,19 @@
         define('URL_LISTATRANSACCIONES','http://localhost/PhpProject1/Vista/MostrarListaTransaccionesVista.php');
         define('URL_MOSTRARINFORMACION','http://localhost/PhpProject1/Vista/MostrarInformacionUsuarioVista.php');
         define('URL_EDITARINFORMACION','http://localhost/PhpProject1/Vista/ModificarInformacionUsuarioVista.php');*/
+
+
+
+        /* web
+
+         * https://banco-program-2.herokuapp.com/PhpProject1/index.php
+         * https://banco-program-2.herokuapp.com/Vista/CreacionUsuarioVista.php
+         * https://banco-program-2.herokuapp.com/Vista/InicioSesionVista.php
+         * https://banco-program-2.herokuapp.com/Vista/InicioVista.php
+         * https://banco-program-2.herokuapp.com/Vista/CreacionCuentaBancariaVista.php
+         * https://banco-program-2.herokuapp.com/Vista/TransaccionVista.php        
+         * https://banco-program-2.herokuapp.com/Vista/MostrarListaTransaccionesVista.php
+         * https://banco-program-2.herokuapp.com/Vista/MostrarInformacionUsuarioVista.php
+         * https://banco-program-2.herokuapp.com/Vista/ModificarInformacionUsuarioVista.php 
+
+         *          */
