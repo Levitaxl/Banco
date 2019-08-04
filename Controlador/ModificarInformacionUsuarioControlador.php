@@ -15,13 +15,14 @@
         
 
         public function validarDatos($nombre,$apellido,$telefono,$ciudad){
+            
                     $permiso=1;
          
                     if(!is_numeric($telefono)){
 			echo "<p class='error'>*Ingrese un telefono valido</p>";
 			$permiso=0;
                     }
-                    if(strlen($telefono)>11){
+                    else if(strlen($telefono)>11){
               		echo "<p class='error'>*El campo telefono contiene muchos numeros maximo 11)</p>";
 			$permiso=0;
                     }
@@ -42,7 +43,8 @@
                 
                     return $permiso;
                 }
-       public function actualizarInformacionUsuario($nombre,$apellido,$telefono,$ciudad){
+       
+        public function actualizarInformacionUsuario($nombre,$apellido,$telefono,$ciudad){
            require_once '../Modelo/ModificarInformacionUsuarioModelo.php'; 
            $informacionUsuario= new ModificarInformacionUsuarioModelo();
            $informacionUsuario->actualizarInformacionUsuario($nombre, $apellido, $telefono, $ciudad);
