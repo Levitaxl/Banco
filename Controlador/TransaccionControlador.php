@@ -54,7 +54,17 @@
     
     
      if (isset($_POST['submit'])) {
+         
+         $tipoBancoEmisor=$_POST['tipoBancoEmisor'];
+         $tipoBancoReceptor=$_POST['tipoBancoReceptor'];
+         echo "<script> MiFuncionJS('$tipoBancoEmisor','$tipoBancoReceptor');</script>";
+         
+         
+         
+         
          require_once '../Modelo/TransaccionModelo.php';
+         
+         
          $transaccionControlador= new TransaccionControlador();
          session_start();
          $cedulaEmisor=$_SESSION['cedula'];
@@ -67,11 +77,7 @@
              $transaccion->realizarTransferencia($transaccion);
              echo "<p class='exito'>*Transsacion exitosa</p>";
              
-         }
-         
-         
-         
-         
+         } 
      }
     
       if (isset($_POST['cancelar'])) {

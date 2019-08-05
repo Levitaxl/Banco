@@ -1,3 +1,13 @@
+<?php 
+    session_start();
+    error_reporting(0);
+    if($_SESSION['cedula']!=null || $_SESSION['cedula']!=''){
+        header("Location:http://localhost/PhpProject1/Vista/InicioVista.php");
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
