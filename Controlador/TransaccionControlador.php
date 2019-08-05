@@ -57,7 +57,8 @@
          
          $tipoBancoEmisor=$_POST['tipoBancoEmisor'];
          $tipoBancoReceptor=$_POST['tipoBancoReceptor'];
-         echo "<script> MiFuncionJS('$tipoBancoEmisor','$tipoBancoReceptor');</script>";
+         $monto=$_POST['monto'];
+         echo "<script> actualizarInputs('$tipoBancoEmisor','$tipoBancoReceptor','$monto');</script>";
          
          
          
@@ -76,6 +77,7 @@
              $transaccion->setCedulaReceptor($transaccion->buscarCedulaDeLaCuenta($nroCuentaReceptor,$tipoBancoReceptor));
              $transaccion->realizarTransferencia($transaccion);
              echo "<p class='exito'>*Transsacion exitosa</p>";
+             echo "<script> vaciarInputs();</script>";
              
          } 
      }
