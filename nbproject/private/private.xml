@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Modelo/CreacionCuentaBancariaModelo.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Modelo/MostrarListaTransaccionesModelo.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Modelo/UsuarioModelo.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Controlador/MostrarInformacionUsuarioControlador.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Modelo/TransaccionModelo.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Controlador/CreacionCuentaBancariaControlador.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Vista/MostrarListaTransaccionesVista.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/index.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Config/Config.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Controlador/InicioSesionControlador.php</file>
-            <file>file:/C:/xampp/htdocs/PhpProject1/Modelo/InicioSesionModelo.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
